@@ -1,11 +1,11 @@
 Name:		xcb-util-errors
 Version:	1.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	XCB errors library
 Group:		System Environment/Libraries
 License:	MIT
-URL:		http://xcb.freedesktop.org
-Source0:	http://xcb.freedesktop.org/dist/%{name}-%{version}.tar.bz2
+URL:		https://xcb.freedesktop.org
+Source0:	https://xcb.freedesktop.org/dist/%{name}-%{version}.tar.bz2
 BuildRequires:  gcc
 BuildRequires:	pkgconfig(xcb) >= 1.4
 BuildRequires:	pkgconfig(xcb-proto)
@@ -61,6 +61,9 @@ rm %{buildroot}%{_libdir}/*.la
 %{_includedir}/xcb/*.h
 
 %changelog
+* Sun Oct 14 2018 Sergey Korolev <korolev.srg@gmail.com> - 1.0-2
+- Switch to https
+
 * Thu Oct 11 2018 Rodrigo Lourenço <guigo.lourenco@gmail.com> - 1.0-1
 - New package.
 
